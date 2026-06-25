@@ -90,7 +90,7 @@ A detailed theoretical background, proposed methodology, dataset preprocessing, 
 # 📂 Repository Structure
 
 ```text
-BachelorThesis-Anomaly-Detection-SK
+BachelorThesis-Anomaly-Detection-EN
 │
 ├── notebooks/
 │   │
