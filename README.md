@@ -26,39 +26,39 @@ In all experiments, the models were trained exclusively on normal data. Anomalou
 
 ---
 
-## 📑 Table of Contents
+## Table of Contents
 
-* 📘 [Bachelor's Thesis](#-bachelors-thesis)
-* 🔗 [Useful Links](#-useful-links)
-* 📂 [Repository Structure](#-repository-structure)
-* 📊 [Datasets](#-datasets)
+* [Bachelor's Thesis](#bachelors-thesis)
+* [Useful Links](#useful-links)
+* [Repository Structure](#-repository-structure)
+* [Datasets](#datasets)
 
-  * 🔋 [NASA Battery Dataset](#-nasa-battery-dataset)
-  * 🏭 [NAB (Numenta Anomaly Benchmark)](#-nab-numenta-anomaly-benchmark)
-  * ❤️ [ECG5000](#️-ecg5000)
-* 📓 [Notebook Description](#-notebook-description)
-* ⚙️ [Common Experimental Settings](#️-common-experimental-settings)
-* 🏆 [Best Results](#-best-results)
-* 📈 [Example Experimental Outputs](#-example-experimental-outputs)
-* 💻 [Installation](#-installation)
-* ▶️ [Running the Project](#️-running-the-project)
-* 👩‍🎓 [Author](#author)
+  * [NASA Battery Dataset](#nasa-battery-dataset)
+  * [NAB (Numenta Anomaly Benchmark)](#nab-numenta-anomaly-benchmark)
+  * [ECG5000](#️ecg5000)
+* [Notebook Description](#notebook-description)
+* [Common Experimental Settings](#️common-experimental-settings)
+* [Best Results](#best-results)
+* [Example Experimental Outputs](#example-experimental-outputs)
+* [Installation](#installation)
+* [Running the Project](#️running-the-project)
+* [Author](#author)
 
 ---
 
-# 📘 Bachelor's Thesis
+# Bachelor's Thesis
 
 A detailed theoretical background, proposed methodology, dataset preprocessing, implementation of the anomaly detection methods, and analysis of the experimental results are presented in the bachelor's thesis.
 
-📄 **Bachelor's Thesis (PDF):**
+**Bachelor's Thesis (PDF):**
 
 [BP_RK_IevgeniiaIevgrafova.pdf](docs/BP_RK_IevgeniiaIevgrafova.pdf)
 
 <p align="right">
-<a href="#-table-of-contents">⬆️ Back to Table of Contents</a>
+<a href="#-table-of-contents">Back to Table of Contents</a>
 </p>
 
-# 🔗 Useful Links
+# Useful Links
 
 ## Development Environment
 
@@ -82,12 +82,12 @@ A detailed theoretical background, proposed methodology, dataset preprocessing, 
 * [ECG5000 Dataset](https://www.kaggle.com/code/mineshjethva/ecg-anomaly-detection)
 
 <p align="right">
-<a href="#-table-of-contents">⬆️ Back to Table of Contents</a>
+<a href="#-table-of-contents">Back to Table of Contents</a>
 </p>
 
 ---
 
-# 📂 Repository Structure
+# Repository Structure
 
 ```text
 BachelorThesis-Anomaly-Detection-EN
@@ -128,14 +128,14 @@ BachelorThesis-Anomaly-Detection-EN
 ```
 
 <p align="right">
-<a href="#-table-of-contents">⬆️ Back to Table of Contents</a>
+<a href="#-table-of-contents">Back to Table of Contents</a>
 </p>
 
 ---
 
-# 📊 Datasets
+# Datasets
 
-## 🔋 NASA Battery Dataset
+## NASA Battery Dataset
 
 The NASA Battery Dataset contains measurements collected from lithium-ion batteries throughout their operational lifetime.
 
@@ -162,7 +162,7 @@ Anomalous cycles were identified based on battery capacity. Cycles with a capaci
 
 ---
 
-## 🏭 NAB (Numenta Anomaly Benchmark)
+## NAB (Numenta Anomaly Benchmark)
 
 The NAB dataset consists of an industrial time series containing temperature measurements collected from industrial equipment.
 
@@ -179,7 +179,7 @@ Anomalies were labeled according to the official anomaly windows defined by the 
 
 ---
 
-## ❤️ ECG5000
+## ECG5000
 
 The ECG5000 dataset contains electrocardiogram (ECG) recordings, where each sample consists of 140 points representing a single heartbeat.
 
@@ -193,12 +193,12 @@ During the experiments:
 * Z-score normalization based on the training data was applied.
 
 <p align="right">
-<a href="#-table-of-contents">⬆️ Back to Table of Contents</a>
+<a href="#-table-of-contents">Back to Table of Contents</a>
 </p>
 
 ---
 
-# 📓 Notebook Description
+# Notebook Description
 
 ## Data Preprocessing
 
@@ -256,12 +256,12 @@ The implementation uses the RBF kernel and performs classification based on the 
 The Autoencoder is implemented using TensorFlow/Keras. Anomaly detection is based on the reconstruction error.
 
 <p align="right">
-<a href="#-table-of-contents">⬆️ Back to Table of Contents</a>
+<a href="#-table-of-contents">Back to Table of Contents</a>
 </p>
 
 ---
 
-# ⚙️ Common Experimental Settings
+# Common Experimental Settings
 
 The following principles were applied across all experiments:
 
@@ -305,12 +305,12 @@ The same base architecture was used in all Autoencoder experiments:
 * `seeds = [42, 43, 44, 45, 46]` for the NASA Battery dataset
 
 <p align="right">
-<a href="#-table-of-contents">⬆️ Back to Table of Contents</a>
+<a href="#-table-of-contents">Back to Table of Contents</a>
 </p>
 
 ---
 
-# 🏆 Best Results
+# Best Results
 
 The following table summarizes the best-performing configurations and the corresponding results achieved by each anomaly detection method.
 
@@ -327,12 +327,12 @@ The following table summarizes the best-performing configurations and the corres
 | AE      | NAB          |   0.00006 |           0.80 |        95.85 |         80.22 |      88.71 |        84.25 |
 
 <p align="right">
-<a href="#-table-of-contents">⬆️ Back to Table of Contents</a>
+<a href="#-table-of-contents">Back to Table of Contents</a>
 </p>
 
 ---
 
-# 📈 Example Experimental Outputs
+# Example Experimental Outputs
 
 The following example presents the results obtained using the **Autoencoder** on the **ECG5000** dataset with the following decision threshold:
 
@@ -361,12 +361,12 @@ The reconstruction error histogram demonstrates the separation of normal and ano
 The ECG reconstruction plots illustrate the Autoencoder's ability to reconstruct normal heartbeats more accurately, while anomalous samples exhibit significantly higher reconstruction errors.
 
 <p align="right">
-<a href="#-table-of-contents">⬆️ Back to Table of Contents</a>
+<a href="#-table-of-contents">Back to Table of Contents</a>
 </p>
 
 ---
 
-# 💻 Installation
+# Installation
 
 The project was developed using:
 
@@ -387,12 +387,12 @@ Required libraries:
 * pathlib
 
 <p align="right">
-<a href="#-table-of-contents">⬆️ Back to Table of Contents</a>
+<a href="#-table-of-contents">Back to Table of Contents</a>
 </p>
 
 ---
 
-# ▶️ Running the Project
+# Running the Project
 
 ## NASA Battery
 
@@ -448,14 +448,14 @@ No separate preprocessing step is required.
 The experimental notebooks load the dataset directly.
 
 <p align="right">
-<a href="#-table-of-contents">⬆️ Back to Table of Contents</a>
+<a href="#-table-of-contents">Back to Table of Contents</a>
 </p>
 
 ---
 
 <a id="author"></a>
 
-# 👩‍🎓 Author
+# Author
 
 **Ievgeniia Ievgrafova**
 
